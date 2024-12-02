@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from functools import reduce
 
 from django.utils.text import smart_split
@@ -42,7 +40,7 @@ XEDITABLE_FIELD_TYPES = {
     "PositiveSmallIntegerField": "number",
     "SlugField": "text",
     "SmallIntegerField": "number",
-    "TextField": "text",
+    "TextField": "textarea",
     "TimeField": "text",
     "ForeignKey": "select",
 }

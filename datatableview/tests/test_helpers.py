@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from datetime import datetime
 from functools import partial
 
@@ -113,7 +111,7 @@ class HelpersTests(DatatableViewTestCase):
         """Verifies that through_filter works."""
         helper = helpers.through_filter
 
-        target_function = lambda data, arg=None: (data, arg)
+        target_function = lambda data, arg=None: (data, arg)  # noqa:E731
 
         # Verify simple use
         data = "Data string"
